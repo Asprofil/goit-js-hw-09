@@ -68,6 +68,8 @@ const galleryItemsMarkup = images.map(({ preview, original, description }) => {
 galleryContainer.innerHTML = galleryItemsMarkup;
 
 new SimpleLightbox('.gallery a', {
+  overlay: true,
+  scrollZoom: false,
   captionsData: 'alt',
   captionPosition: 'bottom',
   captionDelay: 250,
